@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002128083768"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {username}\n\nI can Am File store Bot Created bt @tactition I Store Files So other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {username}\n\nI can Am File store Bot Created by @tactition I Store Files So other users can access it from special link.")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "6852649461").split()):
