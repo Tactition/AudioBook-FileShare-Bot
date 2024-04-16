@@ -63,7 +63,7 @@ class Bot(Client):
             |  |     /  _____  \ |  `----.    |  |     |  |     |  |     |  | |  `--'  | |  |\   | 
             |__|    /__/     \__\ \______|    |__|     |__|     |__|     |__|  \______/  |__| \__| 
         """)
-
+        self.LOGGER(__name__).info(f"Bot Deployed Succesfull Enjoy")
         self.username = usr_bot_me.username
         #web-response
         app = web.AppRunner(await web_server())
