@@ -86,6 +86,7 @@ async def start_command(client: Client, message: Message):
             try:
                 await snt_msg.delete()
                 await SD.delete()
+                lastMsg = await message.reply_text("Thanks For using Me.See You Soon Again")
             except:
                 pass
         return
