@@ -79,7 +79,7 @@ async def start_command(client: Client, message: Message):
             except:
                 pass
 
-        SD = await message.reply_text(f"{message.from_user.mention}! The Special Message will be deleted After 60 seconds. Save It to the Saved Message now!")
+        SD = await message.reply_text(f"<b>{message.from_user.mention}</b>! The Special Message will be deleted After 60 seconds. Save It to the Saved Message now!")
         await asyncio.sleep(60)
 
         for snt_msg in snt_msgs:
