@@ -6,16 +6,16 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7062691808:AAFittmoSJm7gaR2ME_zhyUik6YXuJ3xeoM")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7235447334:AAFZ4rBUNV6wsD2hvMB3zXxlU7M9GFj7dGM")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "26205215"))
+APP_ID = int(os.environ.get("APP_ID", "22498893"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "d4d9b7bce6d76bec759e404ecf2c3ebf")
+API_HASH = os.environ.get("API_HASH", "fed0fae4763accf081f5cf3d89862924")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002141494142"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002230949609"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1178233430"))
@@ -25,10 +25,10 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://ZahidNazir:ZahidNazir@1stcluster.1p0dlne.mongodb.net/?retryWrites=true&w=majority&appName=1stcluster")
-DB_NAME = os.environ.get("DATABASE_NAME", "ZahidNazir")
+DB_NAME = os.environ.get("DATABASE_NAME", "EmpireUSers")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002065254823"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -36,7 +36,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {username}\n\nI Am File store Bot Created by @tactition I Store Files So other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6852649461").split()):
+    for x in (os.environ.get("ADMINS", "1178233430").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -57,9 +57,9 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages! You Can't Use Me. I am only meant For @tactition."
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1250450587)
+ADMINS.append(1178233430)
 
-LOG_FILE_NAME = "filesharingbot.txt"
+LOG_FILE_NAME = "Empire.txt"
 
 logging.basicConfig(
     level=logging.INFO,
