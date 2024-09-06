@@ -25,7 +25,7 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://ZahidNazir:ZahidNazir@1stcluster.1p0dlne.mongodb.net/?retryWrites=true&w=majority&appName=1stcluster")
-DB_NAME = os.environ.get("DATABASE_NAME", "ZahidNazir")
+DB_NAME = os.environ.get("DATABASE_NAME", "Audiobook_Channel")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002065254823"))
